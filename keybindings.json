@@ -1,0 +1,103 @@
+// Place your key bindings in this file to override the defaults
+[
+    // {
+    //     "key":     "ctrl+`",
+    //     "command": "workbench.action.terminal.focus"
+    // },
+    // {
+    //     "key":     "ctrl+`",
+    //     "command": "workbench.action.focusActiveEditorGroup",
+    //     "when":    "terminalFocus"
+    // },
+    // {
+    //     "key": "g s",`
+    //     "command": "workbench.scm.focus",
+    //     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    // },
+    // {
+    //     "key": "s",
+    //     "command": "git.stage",
+    //     "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'",
+    // },
+    // {
+    //     "key": "u",
+    //     "command": "git.unstage",
+    //     "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'",
+    // },
+    {
+        "key": "shift+ctrl+a",
+        "command": "scm.inputFocus",
+        "when": "scmViewVisible && listFocus"
+    },
+    // NAVIGATION
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    // FILE TREE
+    {
+        "command": "workbench.action.toggleSidebarVisibility",
+        "key": "ctrl+e"
+    },
+    {
+        "command": "workbench.files.action.focusFilesExplorer",
+        "key": "ctrl+e",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "n",
+        "command": "explorer.newFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "d",
+        "command": "explorer.newFolder",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "cmd+shift+n",
+        "command": "workbench.action.newWindow",
+        "when": "!explorerViewletFocus && vim.mode != 'Insert'"
+    },
+    // EXTRA
+    {
+        "key": "ctrl+z",
+        "command": "workbench.action.toggleZenMode"
+    }
+]
