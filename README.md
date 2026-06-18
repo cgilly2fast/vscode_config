@@ -36,7 +36,7 @@ Or from VS Code:
 
 - Press `Cmd+Shift+P`
 - Type and Select **`Preferences: Open User Settings (JSON)`**
-- Add or update this setting:
+- Add or update this setting to `relative`:
 
 ```json
 "editor.lineNumbers": "relative"
