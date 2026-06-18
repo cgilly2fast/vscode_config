@@ -1,18 +1,47 @@
 # Colby VSCode Setup
 
-## Instructions (macOS):
+## Files
 
-1. Install VSCodeVim extension
+- [`keybindings.json`](./keybindings.json) — my custom VS Code keybindings
 
-- Cmd+Shift+P → "Extensions: Install Extensions" → search "Vim" → install VSCodeVim
+## Instructions macOS
 
-2. Open keybindings.json
+### 1. Install VSCodeVim
+Enables Vim mode in VS Code
 
-- Cmd+Shift+P → type "Preferences: Open Keyboard Shortcuts (JSON)" → select it
+Install the [VSCodeVim extension](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim).
 
-WARN: Make sure you pick **"Open Keyboard Shortcuts (JSON)"** — not "Open Default Keyboard Shortcuts (JSON)" which is read-only.
+Or from VS Code:
 
-3. Paste the JSON from ./keybindings.json in to VS Code
+- Press `Cmd+Shift+P`
+- Type `Extensions: Install Extensions`
+- Search for `Vim`
+- Install **VSCodeVim** by `vscodevim`
 
-- Replace the entire file contents with the JSON I provided
-- Save — done
+### 2. Open VS Code keybindings
+
+- Press `Cmd+Shift+P`
+- Type and Select **`Preferences: Open Keyboard Shortcuts (JSON)`**
+
+> ⚠️ Do **not** select **Preferences: Open Default Keyboard Shortcuts (JSON)**.  
+> That file is read-only and cannot be edited.
+
+### 3. Paste keybindings
+
+- Open and Copy contents of [`keybindings.json`](./keybindings.json)
+- Paste it into the VS Code `keybindings.json` file
+- Save with `Cmd+S`
+
+### 4. Enable relative line numbers
+
+- Press `Cmd+Shift+P`
+- Type and Select **`Preferences: Open User Settings (JSON)`**
+- Add or update this setting:
+
+```json
+"editor.lineNumbers": "relative"
+```
+
+> ⚠️ Do **not** replace the whole `settings.json`; just add or update this one line.
+
+Done.
