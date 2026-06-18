@@ -30,7 +30,7 @@ Or from VS Code:
 
 - Open and Copy contents of [`keybindings.json`](./keybindings.json)
 - Paste it into the VS Code `keybindings.json` file
-- Save with `Cmd+S`
+- Save
 
 ### 4. Enable relative line numbers
 
@@ -41,6 +41,7 @@ Or from VS Code:
 ```json
 "editor.lineNumbers": "relative"
 ```
+- Save
 
 > ⚠️ Do **not** replace the whole `settings.json`; just add or update this one line.
 
