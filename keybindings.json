@@ -5,6 +5,18 @@
         "command": "scm.inputFocus",
         "when": "scmViewVisible && listFocus"
     },
+    {
+        "key": "ctrl+shift+[",
+        "command": "editor.fold"
+    },
+    {
+        "key": "ctrl+shift+]",
+        "command": "editor.unfold"
+    },
+    {
+        "key": "ctrl+shift+\\",
+        "command": "editor.toggleFold"
+    }
     // NAVIGATION
     {
         "key": "ctrl+h",
@@ -46,20 +58,30 @@
         "command": "workbench.action.terminal.kill",
         "when": "terminalFocus"
     },
+    {
+        "key": "ctrl+shift+g",
+        "command": "workbench.view.scm",
+        "when": "terminalFocus"
+    },
     // FILE TREE
     {
-        "command": "workbench.action.toggleSidebarVisibility",
+        "command": "workbench.view.explorer",
         "key": "ctrl+e"
-    },
-    {
-        "command": "workbench.files.action.focusFilesExplorer",
-        "key": "ctrl+e",
-        "when": "editorTextFocus"
     },
     {
         "key": "n",
         "command": "explorer.newFile",
         "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.view.explorer",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.togglePanel",
+        "when": "sidebarFocus"
     },
     {
         "key": "d",
