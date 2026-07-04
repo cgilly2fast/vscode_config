@@ -16,7 +16,7 @@
     {
         "key": "ctrl+shift+\\",
         "command": "editor.toggleFold"
-    }
+    },
     // NAVIGATION
     {
         "key": "ctrl+h",
@@ -46,7 +46,13 @@
     },
     {
         "key": "ctrl+shift+j",
-        "command": "workbench.action.togglePanel"
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.togglePanel",
+        "when": "terminalFocus"
     },
     {
         "key": "ctrl+shift+n",
@@ -78,11 +84,8 @@
         "command": "workbench.view.explorer",
         "when": "terminalFocus"
     },
-    {
-        "key": "ctrl+j",
-        "command": "workbench.action.togglePanel",
-        "when": "sidebarFocus"
-    },
+
+
     {
         "key": "d",
         "command": "explorer.newFolder",
@@ -92,6 +95,11 @@
         "key": "cmd+shift+n",
         "command": "workbench.action.newWindow",
         "when": "!explorerViewletFocus && vim.mode != 'Insert'"
+    },
+    // COPY PATH
+    {
+        "key": "alt+cmd+c",
+        "command": "workbench.action.files.copyPathOfActiveFile"
     },
     // EXTRA
     {
