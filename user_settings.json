@@ -1,5 +1,6 @@
 {
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Kanagawa",
+    "editor.lineNumbers": "relative",
     "editor.formatOnSave": true,
     "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
@@ -135,5 +136,10 @@
     "workbench.statusBar.visible": false,
     "workbench.activityBar.location": "hidden",
     "explorer.confirmPasteNative": false,
-    "diffEditor.maxComputationTime": 0
+    "diffEditor.maxComputationTime": 0,
+    "terminal.integrated.mouseWheelScrollSensitivity": 3,
+    "terminal.integrated.gpuAcceleration": "off",
+    "terminal.integrated.enableKittyKeyboardProtocol": false,
+    "claudeCode.preferredLocation": "panel",
+    "editor.accessibilitySupport": "on"
 }
