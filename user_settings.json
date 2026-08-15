@@ -116,6 +116,10 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "workbench.editor.showTabs": "single",
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 15,
+    "workbench.editor.limit.perEditorGroup": false,
+    "workbench.editor.limit.excludeDirty": true,
 
     "workbench.colorTheme": "Kanagawa",
     "extensions.ignoreRecommendations": true,
