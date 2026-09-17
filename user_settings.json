@@ -139,7 +139,8 @@
     "diffEditor.maxComputationTime": 0,
     "terminal.integrated.mouseWheelScrollSensitivity": 3,
     "terminal.integrated.gpuAcceleration": "off",
-    "terminal.integrated.enableKittyKeyboardProtocol": false,
+    "terminal.integrated.enableKittyKeyboardProtocol": true,
+    "terminal.integrated.macOptionIsMeta": true,
     "claudeCode.preferredLocation": "panel",
     "editor.accessibilitySupport": "on"
 }

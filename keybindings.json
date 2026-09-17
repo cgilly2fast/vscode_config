@@ -65,6 +65,30 @@
         "when": "terminalFocus"
     },
     {
+        "key": "ctrl+shift+u",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": { "text": "\u001b[117;6u" },
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": { "text": "\u001b[100;6u" },
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+alt+u",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": { "text": "\u001b[117;7u" },
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+alt+d",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": { "text": "\u001b[100;7u" },
+        "when": "terminalFocus"
+    },
+    {
         "key": "ctrl+shift+g",
         "command": "workbench.view.scm",
         "when": "terminalFocus"
